@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Skins Proibidas</title>
+</head>
+<body>
+    <h2>Campeonato IFS | Skins Proibidas</h2>
+    <select id="selectSkin">
+        <option value="0">Selecionar Campeão</option>
+        <option value="1">Annie</option>
+        <option value="2">Aurelion Sol</option>
+        <option value="3">Corki</option>
+        <option value="4">Ezreal</option>
+        <option value="5">Fizz</option>
+        <option value="6">Gragas</option>
+        <option value="7">Heimerdinger</option>
+        <option value="8">Jayce</option>
+        <option value="9">Karma</option>
+        <option value="10">Kayle</option>
+        <option value="11">Kennen</option>
+        <option value="12">Kindred</option>
+        <option value="13">Kog'Maw</option>
+        <option value="14">Lux</option>
+        <option value="15">Malphite</option>
+        <option value="16">Malzahar</option>
+        <option value="17">Nautilus</option>
+        <option value="18">Neeko</option>
+        <option value="19">Nidalee</option>
+        <option value="20">Nunu</option>
+        <option value="21">Rakan</option>
+        <option value="22">Renekton</option>
+        <option value="23">Rek'Sai</option>
+        <option value="24">Rengar</option>
+        <option value="25">Shaco</option>
+        <option value="26">Shyvana</option>
+        <option value="27">Sivir</option>
+        <option value="28">Sona</option>
+        <option value="29">Syndra</option>
+        <option value="30">Varus</option>
+        <option value="31">Veigar</option>
+        <option value="32">Viktor</option>
+        <option value="33">Vladimir</option>
+        <option value="34">Ziggs</option>
+    </select>
+    <div id="skin"></div>
+</body>
+<script>
+    const select = document.querySelector("#selectSkin")
+    select.addEventListener("change", (event) => {
+        const skin = document.querySelector("#skin")
+        let skinValue = event.target.value
+        if(skinValue == 1) {
+            skin.innerHTML = "<br>Annie Gótica"
+        } else if(skinValue == 2) {
+            skin.innerHTML = "<br>Aurelion Sol Mech"
+        } else if(skinValue == 3) {
+            skin.innerHTML = "<br>Corki Asas do Dragão"
+        } else if(skinValue == 4){
+            skin.innerHTML = "<br>Ezreal Pulsefire<br>Ezreal Fliperama"
+        } else if(skinValue == 5){
+            skin.innerHTML = "<br>Fizz Supergalático<br>Fizz Doguinho"
+        } else if(skinValue == 6){
+            skin.innerHTML = "<br>Gragas Vândalo"
+        } else if(skinValue == 7){
+            skin.innerHTML = "<br>Heimerdinger Treinador de Dragões"
+        } else if(skinValue == 8){
+            skin.innerHTML = "<br>Jayce Esquecido"
+        } else if(skinValue == 9){
+            skin.innerHTML = "<br>Karma Estrela Negra"
+        } else if(skinValue == 10){
+            skin.innerHTML = "<br>Kayle: Pentakayle"
+        } else if(skinValue == 11){
+            skin.innerHTML = "<br>Kennen Infernal"
+        } else if(skinValue == 12){
+            skin.innerHTML = "<br>Kindred Supergaláticos"
+        } else if(skinValue == 13){
+            skin.innerHTML = "<br>Kog'Maw: Leão Chinês<br>Kog'Maw: Máquina de Combate"
+        } else if(skinValue == 14){
+            skin.innerHTML = "<br>Lux Elementalista"
+        } else if(skinValue == 15){
+            skin.innerHTML = "<br>Malphite Barca de Ferro"
+        } else if(skinValue == 16){
+            skin.innerHTML = "<br>Malzahar Chefão"
+        } else if(skinValue == 17){
+            skin.innerHTML = "<br>Nautilus: AstoNautilus"
+        } else if(skinValue == 18){
+            skin.innerHTML = "<br>Neeko Inverno Mágico"
+        } else if(skinValue == 19){
+            skin.innerHTML = "<br>Nidalee Caçadora de Cabeças<br>Nidalee Desafiante"
+        } else if(skinValue == 20){
+            skin.innerHTML = "<br>Nunu Zumbi"
+        } else if(skinValue == 21){
+            skin.innerHTML = "<br>Rakan Queridinho"
+        } else if(skinValue == 22){
+            skin.innerHTML = "<br>Renekcton Curtindo o Verão"
+        } else if(skinValue == 23){
+            skin.innerHTML = "<br>Rek'Sai Curtindo o Verão"
+        } else if(skinValue == 24){
+            skin.innerHTML = "<br>Rengar Mech"
+        } else if(skinValue == 25){
+            skin.innerHTML = "<br>Shaco Goseong"
+        } else if(skinValue == 26){
+            skin.innerHTML = "<br>Shyvana Garras-de-Crânio<br>Shyvana Chamas Negras"
+        } else if(skinValue == 27){
+            skin.innerHTML = "<br>Sivir Caçadora"
+        } else if(skinValue == 28){
+            skin.innerHTML = "<br>Sona DJ"
+        } else if(skinValue == 29){
+            skin.innerHTML = "<br>Syndra Justiceira<br>Syndra Atlante<br>Syndra Dama de Ouros<br>Syndra Guardiã Estelar<br>Syndra Curtindo o Verão<br>Syndra Dia Nevado"
+        } else if(skinValue == 30){
+            skin.innerHTML = "<br>Varus Arco Celeste"
+        } else if(skinValue == 31){
+            skin.innerHTML = "<br>Veigar Chefão Final"
+        } else if(skinValue == 32){
+            skin.innerHTML = "<br>Viktor Criador"
+        } else if(skinValue == 33){
+            skin.innerHTML = "<br>Vladimir Águas Sombrias<br>Vladimir Ladrão de Almas<br>Vladimir Emissário da Escuridão"
+        } else if(skinValue == 34){
+            skin.innerHTML = "<br>Zigs Chefão"
+        } 
+    })
+</script>
+</html>
